@@ -12,8 +12,7 @@
         <h1 id="glowave" class="underline-animation">glowave</h1>
     </div>
     <p id="version">1.0</p>
-    <button id="showCssBtn">css</button>
-    <button class="fullscreen-button" onclick="toggleFullscreen()">Toggle Fullscreen</button>
+    <button onclick="toggleFullscreen()" id="showCssBtn">fullscreen</button>
 
     <script>
         function toggleFullscreen() {
@@ -21,8 +20,16 @@
                 document.documentElement.requestFullscreen().catch((err) => {
                     alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
                 });
+                document.getElementById("showCssBtn").innerText = "erase the text and button";
+
             } else {
-                document.exitFullscreen();
+            // DELETE div class content
+                document.getElementById("glowave").remove();
+                document.getElementById("showCssBtn").remove();
+                document.getElementById("version").remove();
+
+
+            
             }
         }
     </script>
