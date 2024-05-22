@@ -1,7 +1,7 @@
-document.getElementById('generateBtn').addEventListener('click', generateGradient);
+document.getElementById('glowave').addEventListener('click', generateGradient);
 document.getElementById('showCssBtn').addEventListener('click', toggleCssDisplay);
 
-let version = 1.0;
+let version = 1.2;
 
 function generateGradient() {
     const colors = generateCoolNeonColors();
@@ -16,8 +16,8 @@ function generateGradient() {
 
     document.getElementById('cssOutput').value = `background: ${gradient};\nbackground-size: 400% 400%;\nanimation: gradientAnimation 5s ease infinite;`;
 
-    version += 0.1;
-    document.getElementById('version').innerText = `Version: ${version.toFixed(1)}`;
+    version += 0.0;
+    document.getElementById('version').innerText = `v${version.toFixed(1)}`;
 }
 
 function generateCoolNeonColors() {

@@ -1,78 +1,119 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background: #0d0d0d;
-    overflow: hidden;
+    font-family: 'Monument', Arial, sans-serif;
+    background: #0d0d0d00;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
+
 .content {
+    background-color: #00000000;
     text-align: center;
     z-index: 10;
+    transition:all 0.3s ease-in-out;
+    width:100%;
     position: relative;
+    mix-blend-mode: difference !important;
+
 }
+
 
 h1 {
-    font-size: 3rem;
+    /*character spacing*/
+    letter-spacing: -5px;
+    max-width:100%;
+    font-size: 2em;
+    transition: all 0.3s ease-in-out; 
     color: #ffffff;
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff;
-    margin-bottom: 10px;
-    /* To be contrary to the background */
-    mix-blend-mode: difference;
+    cursor: copy;
 }
 
-.subtitle {
-    font-size: 1.2rem;
-    color: #ff0055;
-    margin-bottom: 20px;
+.underline-animation::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    margin-bottom: 0em;
+    width: 100%;
+    background: #333;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
 }
 
-#generateBtn, #showCssBtn {
+.underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+h1:hover{
+    font-size:2.3em;
+    /* slightly rotate */
+    transition: all 2.0s ease-in-out;
+    transform: rotate(1deg);
+
+}
+h1:hover:active{
+    color: rgb(0, 0, 0) !important;
+    font-size:2.3em;
+    /* slightly rotate */
+    transform: rotate(359deg);
+
+}
+#showCssBtn {
     padding: 15px 30px;
     font-size: 18px;
     cursor: pointer;
-    background-color: #333;
-    border: 2px solid #ff0055;
-    color: #ff0055;
-    transition: background-color 0.3s, color 0.3s, border 0.3s;
-    text-shadow: 0 0 10px #ff0055;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius:80px;
+    color: #000000;
+    transition: all 0.3s;
     margin-bottom: 20px;
-    display: block;
-    margin: 10px auto;
-    width: 200px;
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+    margin-left:1em;
 }
+#showCssBtn:after{
+    content: "CSS";
 
-#generateBtn:hover, #showCssBtn:hover {
-    background-color: #ff0055;
+}
+#showCssBtn:hover {
+    background-color: #ffffff;
     color: #0d0d0d;
     border: 2px solid #0d0d0d;
+    content: "copy to clipboard";
 }
 
 textarea {
     width: 80%;
     height: 100px;
     background: rgba(34, 34, 34, 0.8);
-    color: #ff0055;
-    border: 2px solid #ff0055;
+    color: #ffffff;
+    border: 2px solid #3c3c3c;
     padding: 10px;
     font-size: 16px;
     resize: none;
-    box-shadow: 0 0 10px #ff0055;
     margin-bottom: 20px;
     display: none; /* Initially hidden */
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
 }
 
 #version {
     font-size: 14px;
+    font-family:"SFProDisplayThin";
     color: #aaa;
     margin-top: 20px;
+    position:absolute;
+    bottom:10px;
+    right: 10px;
+    margin-right:10px;
 }
 
 .background {
@@ -83,7 +124,7 @@ textarea {
     height: 100%;
     display: flex;
     overflow: hidden;
-    z-index: 1;
+    z-index:-1;
 }
 
 .strip {
@@ -105,3 +146,18 @@ textarea {
     50% { background-position: 50% 100%; }
     100% { background-position: 50% 0%; }
 }
+/* HTML: <div class="loader"></div> */
+#loader {
+    z-index:999;
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: 
+      radial-gradient(farthest-side,#ffa516 94%,#0000) top/8px 8px no-repeat,
+      conic-gradient(#0000 30%,#ffa516);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+    animation: l13 1s infinite linear;
+  }
+  @keyframes l13{ 
+    100%{transform: rotate(1turn)}
+  }

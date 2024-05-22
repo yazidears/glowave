@@ -1,0 +1,88 @@
+
+/*create font*/
+@font-face {
+    font-family: 'SFProDisplayBlack';
+    src: url('fonts/SF-Pro-Display-Black.otf');
+}
+@font-face {
+    font-family: 'SFProDisplayBlackItalic';
+    src: url('fonts/SF-Pro-Display-BlackItalic.otf');
+}
+@font-face {
+    font-family: 'SFProDisplayBold';
+    src: url('fonts/SF-Pro-Display-Bold.otf');
+}
+@font-face {
+    font-family: 'SFProDisplayBoldItalic';
+    src: url('fonts/SF-Pro-Display-BoldItalic.otf');
+}
+@font-face {
+    font-family: 'SFProDisplayHeavy';
+    src: url('fonts/SF-Pro-Display-Heavy.otf');
+}
+@font-face {
+    font-family: 'SFProDisplayHeavyItalic';
+    src: url('fonts/SF-Pro-Display-HeavyItalic.otf');
+}
+@font-face {
+    font-family: 'SFProDisplayLight';
+    src: url('fonts/SF-Pro-Display-Light.otf');
+}
+@font-face {
+    font-family: 'SFProDisplayLightItalic';
+    src: url('fonts/SF-Pro-Display-LightItalic.otf');
+}
+@font-face {
+    font-family: 'SFProDisplayMedium';
+    src: url('fonts/SF-Pro-Display-Medium.otf');
+}
+@font-face {
+    font-family: 'SFProDisplayMediumItalic';
+    src: url('fonts/SF-Pro-Display-MediumItalic.otf');
+}
+@font-face {
+    font-family: 'SFProDisplayRegular';
+    src: url('fonts/SF-Pro-Display-Regular.otf');
+    
+}
+@font-face {
+    font-family: 'SFProDisplayRegularItalic';
+    src: url('fonts/SF-Pro-Display-RegularItalic.otf');
+}
+@font-face {
+    font-family: 'SFProDisplaySemibold';
+    src: url('fonts/SF-Pro-Display-Semibold.otf');
+}
+@font-face {
+    font-family: 'SFProDisplaySemiboldItalic';
+    src: url('fonts/SF-Pro-Display-SemiboldItalic.otf');
+}
+@font-face {
+    font-family: 'SFProDisplayThin';
+    src: url('fonts/SF-Pro-Display-Thin.otf');
+}
+@font-face {
+    font-family: 'SFProDisplayThinItalic';
+    src: url('fonts/SF-Pro-Display-ThinItalic.otf');
+}
+@font-face {
+    font-family: 'SFProDisplayUltralight';
+    src: url('fonts/SF-Pro-Display-Ultralight.otf');
+    
+}
+@font-face {
+    font-family: 'SFProDisplayUltralightItalic';
+    src: url('fonts/SF-Pro-Display-UltralightItalic.otf');
+}
+@font-face {
+    font-family: 'Horizon';
+    src: url('fonts/Horizon.otf');
+}
+@font-face {
+    font-family: 'HorizonOut';
+    src: url('fonts/Horizon-Outline.otf');
+}
+@font-face {
+    font-family: 'Monument';
+    src: url('fonts/Monument.otf');
+}
