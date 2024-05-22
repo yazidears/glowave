@@ -13,7 +13,19 @@
     </div>
     <p id="version">1.0</p>
     <button id="showCssBtn">css</button>
+    <button class="fullscreen-button" onclick="toggleFullscreen()">Toggle Fullscreen</button>
 
+    <script>
+        function toggleFullscreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch((err) => {
+                    alert(`Error attempting to enable fullscreen mode: ${err.message} (${err.name})`);
+                });
+            } else {
+                document.exitFullscreen();
+            }
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
