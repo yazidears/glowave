@@ -1,7 +1,9 @@
 document.getElementById('generateBtn').addEventListener('click', generateGradient);
 
+let version = 1.0;
+
 function generateGradient() {
-    const colors = generatePresetColors();
+    const colors = generateCoolNeonColors();
     const gradient = `linear-gradient(90deg, ${colors.join(', ')})`;
     const previewElement = document.getElementById('gradientPreview');
     previewElement.style.background = gradient;
@@ -9,17 +11,11 @@ function generateGradient() {
     previewElement.style.animation = 'gradientAnimation 15s ease infinite';
 
     document.getElementById('cssOutput').value = `background: ${gradient};\nbackground-size: 400% 400%;\nanimation: gradientAnimation 15s ease infinite;`;
+    
+    version += 0.1;
+    document.getElementById('version').innerText = `Version: ${version.toFixed(1)}`;
 }
 
-function generatePresetColors() {
+function generateCoolNeonColors() {
     const presetColors = [
-        ['#fcb045', '#fd1d1d', '#833ab4'],
-        ['#00c6ff', '#0072ff'],
-        ['#f77062', '#fe5196'],
-        ['#ff5f6d', '#ffc371'],
-        ['#43e97b', '#38f9d7'],
-        ['#30cfd0', '#330867']
-    ];
-    const randomIndex = Math.floor(Math.random() * presetColors.length);
-    return presetColors[randomIndex];
-}
+        ['#fcb045', '#fd
