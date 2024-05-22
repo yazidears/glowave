@@ -33,7 +33,30 @@ function generateCoolNeonColors() {
         ['#ffecd2', '#fcb69f'],
         ['#a18cd1', '#fbc2eb'],
         ['#ff8177', '#ff867a', '#ff8c7f', '#f99185', '#cf556c', '#b12a5b'],
-        ['#eaafc8', '#654ea3', '#eaafc8']
+        ['#eaafc8', '#654ea3', '#eaafc8'],
+        ['#ff6f91', '#ff9671', '#ffc75f', '#f9f871'],
+        ['#845ec2', '#d65db1', '#ff6f91', '#ff9671', '#ffc75f', '#f9f871'],
+        ['#00c9ff', '#92fe9d'],
+        ['#ff9a9e', '#fecfef', '#feada6', '#f6efec'],
+        ['#f79d00', '#64f38c'],
+        ['#c2e59c', '#64b3f4'],
+        ['#ff6f7d', '#bfe9ff'],
+        ['#ffdde1', '#ee9ca7'],
+        ['#c33764', '#1d2671'],
+        ['#544a7d', '#ffd452'],
+        ['#0099f7', '#f11712'],
+        ['#6a11cb', '#2575fc'],
+        ['#fc00ff', '#00dbde'],
+        ['#11998e', '#38ef7d'],
+        ['#ee0979', '#ff6a00'],
+        ['#7f00ff', '#e100ff'],
+        ['#56ab2f', '#a8e063'],
+        ['#614385', '#516395'],
+        ['#02aab0', '#00cdac'],
+        ['#d66d75', '#e29587'],
+        ['#000428', '#004e92'],
+        ['#fc4a1a', '#f7b733'],
+        ['#654ea3', '#eaafc8']
     ];
     const randomIndex = Math.floor(Math.random() * presetColors.length);
     return presetColors[randomIndex];
