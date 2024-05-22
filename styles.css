@@ -17,8 +17,8 @@ body, html {
 
 h1 {
     font-size: 3rem;
-    color: #00ffcc;
-    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc, 0 0 40px #00ffcc;
+    color: #ff0055;
+    text-shadow: 0 0 10px #ff0055, 0 0 20px #ff0055, 0 0 30px #ff0055, 0 0 40px #ff0055;
 }
 
 #generateBtn {
@@ -27,14 +27,14 @@ h1 {
     font-size: 18px;
     cursor: pointer;
     background-color: #333;
-    border: 2px solid #00ffcc;
-    color: #00ffcc;
+    border: 2px solid #ff0055;
+    color: #ff0055;
     transition: background-color 0.3s, color 0.3s, border 0.3s;
-    text-shadow: 0 0 10px #00ffcc;
+    text-shadow: 0 0 10px #ff0055;
 }
 
 #generateBtn:hover {
-    background-color: #00ffcc;
+    background-color: #ff0055;
     color: #0d0d0d;
     border: 2px solid #0d0d0d;
 }
@@ -45,20 +45,20 @@ h1 {
     margin: 20px 0;
     background-size: 400% 400%;
     animation: gradientAnimation 15s ease infinite;
-    border: 2px solid #00ffcc;
-    box-shadow: 0 0 20px #00ffcc;
+    border: 2px solid #ff0055;
+    box-shadow: 0 0 20px #ff0055;
 }
 
 textarea {
     width: 100%;
     height: 100px;
     background: #222;
-    color: #00ffcc;
-    border: 2px solid #00ffcc;
+    color: #ff0055;
+    border: 2px solid #ff0055;
     padding: 10px;
     font-size: 16px;
     resize: none;
-    box-shadow: 0 0 10px #00ffcc;
+    box-shadow: 0 0 10px #ff0055;
 }
 
 @keyframes gradientAnimation {

@@ -1,7 +1,7 @@
 document.getElementById('generateBtn').addEventListener('click', generateGradient);
 
 function generateGradient() {
-    const colors = generateRandomColors(4);
+    const colors = generatePresetColors();
     const gradient = `linear-gradient(90deg, ${colors.join(', ')})`;
     const previewElement = document.getElementById('gradientPreview');
     previewElement.style.background = gradient;
@@ -11,10 +11,15 @@ function generateGradient() {
     document.getElementById('cssOutput').value = `background: ${gradient};\nbackground-size: 400% 400%;\nanimation: gradientAnimation 15s ease infinite;`;
 }
 
-function generateRandomColors(num) {
-    const colors = [];
-    for (let i = 0; i < num; i++) {
-        colors.push(`#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`);
-    }
-    return colors;
+function generatePresetColors() {
+    const presetColors = [
+        ['#fcb045', '#fd1d1d', '#833ab4'],
+        ['#00c6ff', '#0072ff'],
+        ['#f77062', '#fe5196'],
+        ['#ff5f6d', '#ffc371'],
+        ['#43e97b', '#38f9d7'],
+        ['#30cfd0', '#330867']
+    ];
+    const randomIndex = Math.floor(Math.random() * presetColors.length);
+    return presetColors[randomIndex];
 }
